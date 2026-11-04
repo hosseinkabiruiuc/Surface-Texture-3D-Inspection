@@ -6,6 +6,8 @@
 55th SME North American Manufacturing Research Conference (NAMRC 55), 2027<br>
 <sup>*</sup>Corresponding author: wpk@illinois.edu</sub></p>
 
+<p><b>Dataset:</b> <a href="https://www.kaggle.com/datasets/hosseinkabir/surface-texture-dataset">Surface Texture Dataset on Kaggle</a></p>
+
 ## Overview
 
 Additive manufacturing (AM) produces complex parts that require accurate and efficient dimensional inspection. Optical scanners provide accurate measurements, but high equipment cost, long acquisition and processing times, limited depth of field, and sensitivity to surface properties can complicate inspection. Generative deep learning models offer a low-cost alternative because they create a three-dimensional (3D) mesh from a single photograph within seconds. The accuracy of these reconstructions depends strongly on what the photograph shows, but the role of surface texture has not been established.
@@ -34,7 +36,7 @@ Surface-Texture-3D-Inspection/
 
 ## Dataset
 
-The original photographs (background not removed) of the Connector, Bearing, and Mount are available on Kaggle: _link to be added_
+A representative subset of the dataset is available on Kaggle: **[Surface Texture Dataset](https://www.kaggle.com/datasets/hosseinkabir/surface-texture-dataset)**. It contains the 9,504 original photographs (background not removed) of the Connector, Bearing, and Mount in all four surface textures and six repeats, organized in the folder layout below.
 
 | Item | Value |
 |---|---|
@@ -42,7 +44,7 @@ The original photographs (background not removed) of the Connector, Bearing, and
 | Surface textures | Checker (PolyJet), UofI logo (PolyJet), L-PBF (as-built 316L), FDM (blue-gray PLA) |
 | Repeats | 6 independent repositionings per part and texture (96 imaging runs) |
 | Views per repeat | 132: 12 azimuth angles (0°–330°, 30° steps) × 11 polar angles (0°–70°, 7° steps) |
-| Images | 3,168 per part, 12,672 in total |
+| Images | 3,168 per part, 12,672 in total (9,504 on Kaggle) |
 | Resolution | 2550 × 2550 px, ≈ 7 µm per pixel at the object plane |
 | Reference geometry | Hexagon Absolute Arm V3P 8525 with AS1 blue-laser scanner (39 µm accuracy), processed in PolyWorks |
 
@@ -135,7 +137,7 @@ git clone https://github.com/Tencent-Hunyuan/Hunyuan3D-2
 
 ## Usage
 
-1. Download the images and place them under `input/raw_images/` using the folder layout above. Place the reference meshes under `input/stls_gt/`.
+1. Download the images from the [Surface Texture Dataset](https://www.kaggle.com/datasets/hosseinkabir/surface-texture-dataset) on Kaggle and place them under `input/raw_images/` using the folder layout above. Place the reference meshes under `input/stls_gt/`. The Kaggle subset does not include the Plug images or the reference meshes.
 2. Run the four notebooks in `src/` in order. Each notebook is a single cell, with its settings defined as constants at the top.
 3. In `accuracy_predictor.ipynb`, set `CHANNELS` (`"rgb"` or `"rgbd"`) and `TEST_PART` (`"Connector"`, `"Bearing"`, `"Mount"` or `"Plug"`). Run once per held-out part for leave-one-part-out evaluation.
 
