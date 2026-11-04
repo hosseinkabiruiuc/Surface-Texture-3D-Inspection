@@ -1,8 +1,11 @@
 # Surface Texture and the Dimensional Accuracy of Single-Image 3D Reconstruction
 
 **Paper:** _Surface Texture Improves the Dimensional Accuracy of 3D Manufacturing Inspection from a Single Image_
+
 Hossein Kabir, Charles T. Whealton, Alex Jiang, Austin F. Martin, Miles V. Bimrose, William P. King\*
+
 Grainger College of Engineering, Department of Mechanical Science and Engineering, University of Illinois Urbana-Champaign, Urbana, IL 61801, USA
+
 _55th SME North American Manufacturing Research Conference (NAMRC 55), 2027_
 
 ## Overview
