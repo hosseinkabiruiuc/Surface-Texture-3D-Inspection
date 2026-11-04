@@ -3,11 +3,8 @@
 <p>Hossein Kabir, Charles T. Whealton, Alex Jiang, Austin F. Martin, Miles V. Bimrose, William P. King*</p>
 
 <p><sub>Grainger College of Engineering, Department of Mechanical Science and Engineering, University of Illinois Urbana-Champaign, Urbana, IL 61801, USA<br>
-  
 55th SME North American Manufacturing Research Conference (NAMRC 55), 2027<br>
-
-* Corresponding author: wpk@illinois.edu</sub></p>
-
+<sup>*</sup>Corresponding author: wpk@illinois.edu</sub></p>
 
 ## Overview
 
@@ -32,8 +29,6 @@ Surface-Texture-3D-Inspection/
 │   ├── icp_alignment.ipynb             # Stage 2: registration to the laser scan + 3D error
 │   ├── depth_anything_v2.ipynb         # Stage 3: image cache + Depth Anything V2 depth maps
 │   └── accuracy_predictor.ipynb        # Stage 4: DINOv3 + transformer regressor (RGB / RGB-D)
-├── requirements.txt
-├── .gitignore
 └── README.md
 ```
 
@@ -134,7 +129,7 @@ Accuracy Predictor results will be added once the leave-one-part-out runs are tr
 - numpy, pandas, pillow, opencv-python
 
 ```bash
-pip install -r requirements.txt
+pip install torch torchvision timm transformers "rembg[gpu]" onnxruntime-gpu open3d trimesh scipy numpy pandas pillow opencv-python jupyter
 git clone https://github.com/Tencent-Hunyuan/Hunyuan3D-2
 ```
 
@@ -183,5 +178,5 @@ WPK, HK, and MVB are inventors on U.S. patent application 19/815,225, "Image Sel
 
 ## Contact
 
-Hossein Kabir: hkabir2@illinois.edu
+Hossein Kabir: hkabir2@illinois.edu<br>
 William P. King (corresponding author): wpk@illinois.edu
