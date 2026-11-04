@@ -13,7 +13,7 @@ Additive manufacturing (AM) produces complex parts that require accurate and eff
 This repository contains the code for a study of how surface texture affects the dimensional accuracy of single-image 3D reconstruction, together with a deep learning model that predicts this accuracy directly from a photograph. Four mechanical parts with different geometries (Connector, Bearing, Mount, Plug) are each manufactured with four surface textures using laser powder bed fusion (L-PBF), PolyJet printing, and fused deposition modeling (FDM). Each part is independently repositioned and scanned six times, with 132 photographs per scan, giving 12,672 images. Every image is reconstructed with Hunyuan3D 2.1 and compared with a reference laser scan. The Accuracy Predictor Module, a DINOv3 feature extractor with a transformer regressor operating on the RGB image and its Depth Anything V2 depth map, then predicts the reconstruction error of each photograph so that the most promising camera view can be selected before 3D reconstruction.
 
 <p align="center">
-  <img src="assets/Figure.png" width="100%">
+  <img src="asset/Figure.png" width="100%">
 </p>
 
 **Figure 1.** Method for physically accurate single-image 3D reconstruction of AM parts. Four mechanical part designs undergo optical imaging on a two-axis robotic stage with a mirrorless camera and macro lens. The Accuracy Predictor Module, a deep learning feature extractor and a transformer regressor, predicts the surface DFT of the reconstruction generated from each image. The rightmost column shows best images of the Connector and Plug and the laser-scan overlay error of each reconstruction.
@@ -22,7 +22,7 @@ This repository contains the code for a study of how surface texture affects the
 
 ```
 Surface-Texture-3D-Inspection/
-├── assets/
+├── asset/
 │   └── Figure.png                      # Figure 1 of the paper
 ├── src/
 │   ├── hunyuan_reconstruction.ipynb    # Stage 1: background removal + Hunyuan3D 2.1
