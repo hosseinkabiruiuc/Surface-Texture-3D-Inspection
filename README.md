@@ -1,7 +1,6 @@
 <h1><b>Surface Texture Improves the Dimensional Accuracy of 3D Manufacturing Inspection from a Single Image</b></h1>
 
 <p>Hossein Kabir, Charles T. Whealton, Alex Jiang, Austin F. Martin, Miles V. Bimrose, William P. King*</p>
-
 <p><sub>Grainger College of Engineering, Department of Mechanical Science and Engineering, University of Illinois Urbana-Champaign, Urbana, IL 61801, USA<br>
 55th SME North American Manufacturing Research Conference (NAMRC 55), 2027<br>
 <sup>*</sup>Corresponding author: wpk@illinois.edu</sub></p>
